@@ -1,0 +1,448 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* START FIRST HEADER FOR BIG SCREENS */
+
+.first-header {
+    background-color: #393E46;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+
+}
+
+.first-header .logo {
+    width: 170px;
+    height: 70px;
+    margin-left: 50px;
+    padding-top: 5px;
+
+}
+
+.links {
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 40px;
+
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+
+}
+
+.links a:hover {
+    color: rgb(130, 127, 123);
+
+}
+/* END FIRST HEADER FOR BIG SCREENS */
+
+
+/* START SECOND HEADER FOR SMALL SCREENS */
+.second-header {
+
+    background-color: #393E46;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    display: none;
+}
+
+.second-header .logo {
+    width: 170px;
+    height: 70px;
+    margin-left: 50px;
+    padding-top: 5px;
+}
+
+.second-header input {
+    display: none;
+}
+.second-header .absolute {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+.fa-bars {
+    font-size: 27px;
+    color: rgba(255, 255, 255, 0.976);
+    transform: scaleX(1.2);
+    cursor: pointer;
+}
+
+.fa-bars:hover {
+    color: rgb(130, 127, 123);
+}
+
+/* On Click Action */
+.second-header input:checked + .show-on-click {
+    display: block;
+}
+/* End On Click Action */
+
+/* Start Show On Click  */
+
+.show-on-click {
+    display: none;
+}
+
+
+.show-on-click .second-links {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #393E46;
+    margin-top: -6px;
+    padding: 0px 20px 0px 20px;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+    float: right;
+}
+
+.show-on-click .second-links a {
+    color: white;
+    text-decoration: none;
+    padding: 25px 30px;
+    text-align: center;
+    border-bottom: 1px solid #5a5b5e;
+}
+
+
+.show-on-click .second-links a:hover {
+    color: rgb(130, 127, 123);
+}
+
+.show-on-click .second-links a:nth-child(4) {
+    border-bottom: none;
+}
+
+/* end show on click */
+
+/* END SECOND HEADER FOR SMALL SCREENS */
+
+/* Start Main Background Part */
+
+
+.pic {
+    background-image: url(../images/HeliCo\ Translation_Services_Liaison\ Interpretation.jpg);
+    width: 100%;
+    background-size: cover;
+    height: 100vh;
+}
+.pic h1 {
+    padding-top: 340px;
+    padding-left: 100px;
+}
+
+.pic button {
+    margin-top: 25px;
+    margin-left: 200px;
+    padding: 10px 25px;
+    border-radius: 15px;
+    transition: 0.3s ease-in-out;
+    border: 0 white;
+    cursor: pointer;
+}
+
+.pic button:hover{
+    background-color: #393E46;
+}
+
+.pic button:hover a{
+
+    color: white;
+}
+
+.pic .txt {
+    background-color: rgba(0, 0, 0, 0.523);
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+.pic .txt a{
+    text-decoration: none;
+    color: #393E46;
+}
+
+.pic .txt a:hover{
+    color: white;
+}
+
+.pic .txt span {
+    background-color: #393e46f2;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* End Main Background Part */
+
+
+/* Start Services Section */
+
+.serv {
+    padding-top: 100px;
+    width: 100%;
+    background-color: #393E46;
+}
+
+.serv .word {
+    padding-top: 30px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.58);
+    padding-top: 63px;
+}
+
+.serv .first {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+    margin: 50px 100px 50px 100px;
+    border-radius: 20px;
+
+}
+
+.serv  .first img {
+    width: 300px;
+    height: 250px;
+}
+
+.serv .text {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.serv .text h4 {
+    margin: 7px 0 20px 0;
+    color: rgba(0, 0, 0, 0.393);
+}
+
+.serv .text h5 {
+    color: rgba(0, 0, 0, 0.693);
+}
+
+
+.serv .second {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+    margin: 0px 100px 50px 100px;
+    border-radius: 20px;
+    
+}
+
+.serv  .second img {
+    width: 370px;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.serv .third {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+    margin: 0px 100px 50px 100px;
+    border-radius: 20px;
+}
+
+.serv  .third img {
+    width: 330px;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.serv .fourth {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+    margin: 0px 100px 50px 100px;
+    border-radius: 20px;
+}
+
+.serv  .fourth img {
+    width: 300px;
+    height: 250px;
+    padding-top: 20px;
+}
+
+.serv .fifth {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: white;
+    padding-bottom: 30px;
+    margin: 0px 100px 0px 100px;
+    border-radius: 20px;
+    border-bottom: 1px solid #393E46;
+}
+
+.serv .fifth img {
+    width: 250px;
+    height: 250px;
+    padding-top: 20px;
+}
+.fin h5 {
+    color: wheat;
+    text-align: center;
+    margin: 20px;
+    margin-bottom: 0;
+    padding-bottom: 20px;
+}
+
+hr {
+        height: 1px;
+        background-color: rgba(255, 255, 255, 0.18);
+        border: none;
+}
+
+
+/* End Services Section */
+
+/* Start About Section */
+
+
+.about {
+    padding-top: 50px;
+    background-color: #393E46;
+    height: 370px;
+    text-align: center;
+}
+
+.about h2 {
+    padding-top: 40px;
+    color: rgba(255, 255, 255, 0.58);
+}
+.about img {
+    margin-top: 80px;
+    height: 170px;
+    width: 300px;
+
+}
+
+.about h3 {
+    color: white;
+    padding-bottom: 60px;
+}
+
+/******************** End About Section *******************/
+
+
+.stay {
+    background-color: #393E46;
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.stay h2 {
+    color: rgba(255, 255, 255, 0.58);
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.stay .mail {
+    color: #04AA6D;
+    cursor: pointer;
+}
+
+
+/* Start Contact Us Section */
+
+
+form {
+    width: 50%;
+    margin: auto;
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+} 
+
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.container .btnn {
+    padding: 11px 35px;
+}
+.container .btnn:hover {
+    background-color: white;
+    color: black;
+}
+
+.container {
+
+    background-color: #393E46;
+    padding: 20px 20px 90px 20px; 
+    width: 100%;
+    margin: auto;
+}
+
+.container label {
+    color: white;
+}
+
+/* End Contact Us Section */
+
+
+.connect {
+    text-align: center;
+    margin: 50px;
+    text-shadow: 1px 1px 60px red;
+}
+
+footer {
+    background-color: #393E46;
+    color: rgba(255, 255, 255, 0.58);
+    padding: 25px;
+    text-align: center;
+}
+
+footer .zaher {
+    color: rgb(163, 135, 133); 
+}
+
