@@ -380,7 +380,7 @@ hr {
 
 /* Start Contact Us Section */
 
-.form {
+form {
     width: 50%;
     margin: auto;
 }
@@ -397,18 +397,15 @@ input[type=text], select, textarea {
 } 
 
 
-input[type=submit] {
+.container .btnn{
     background-color: #04AA6D;
     color: white;
-    padding: 12px 20px;
+    padding: 11px 35px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
 
-.container .btnn {
-    padding: 11px 35px;
-}
 .container .btnn:hover {
     background-color: white;
     color: black;
@@ -446,3 +443,14 @@ footer .zaher {
     color: rgb(163, 135, 133); 
 }
 
+/* alert */
+
+.alert{
+    color: white;
+    background-color: #04AA6D;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 30px 0;
+    display: none;
+}
